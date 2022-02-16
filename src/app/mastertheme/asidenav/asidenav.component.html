@@ -34,35 +34,45 @@
           </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/login" class="nav-link">
+          <a routerLink="/login" class="nav-link active">
             <i class="nav-icon fas fa-user"></i>
             <p>
               Login
             </p>
           </a>
         </li>
-        <li class="nav-item has-treeview menu-open">
+        <li class="nav-item has-treeview menu-close">
           <a href="#" class="nav-link active">
-            <i class="nav-icon fas fa-user"></i>
+            <i class="nav-icon fas fa-wheelchair"></i>
             <p>
-              Page Sample
-
+            Patients
               <i class="fas fa-angle-left right"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a routerLink="/" class="nav-link active">
+              <a routerLink="/patients/addpatients" class="nav-link active">
                 <i class="far fa-circle nav-icon"></i>
-                <p>General</p>
-                <span class="right badge badge-danger">New</span>
+                <p>Add Patient</p>             
               </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">
+              <a routerLink="/patients/allpatients" class="nav-link active">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Sample</p>
-                <span class="right badge badge-danger">New</span>
+                <p>All Patients</p>             
+              </a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/patients/patientdetails" class="nav-link active">
+                <i class="far fa-circle nav-icon"></i>
+                <p> Patient Details</p>             
+              </a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/patients/editpatientdetails" class="nav-link active">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Edit Patient Details</p>
+              <!-- <span class="right badge badge-danger">New</span> -->
               </a>
             </li>
 
@@ -70,62 +80,91 @@
         </li>
 
 
-
-
-        <li class="nav-header">MULTI LEVEL EXAMPLE</li>
-        <li class="nav-item has-treeview">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-circle"></i>
+        <li class="nav-item has-treeview menu-close">
+          <a href="#" class="nav-link active">
+            <i class="nav-icon fas fa-user-md"></i>
             <p>
-              Level 1
-              <i class="right fas fa-angle-left"></i>
+          Doctors
+              <i class="fas fa-angle-left right"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a routerLink="/doctor/adddoctor" class="nav-link active">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Level 2</p>
+                <p>Add Doctor</p>             
               </a>
-            </li>
-            <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>
-                  Level 2
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
-                    <p>Level 3</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
-                    <p>Level 3</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
-                    <p>Level 3</p>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a routerLink="/doctor/alldoctors" class="nav-link active">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Level 2</p>
+                <p>All Doctors</p>             
               </a>
             </li>
+            <li class="nav-item">
+              <a routerLink="/doctor/doctordetails" class="nav-link active">
+                <i class="far fa-circle nav-icon"></i>
+                <p> Doctor Details</p>             
+              </a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/doctor/editdoctors" class="nav-link active">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Edit Doctor Details</p>
+              <!-- <span class="right badge badge-danger">New</span> -->
+              </a>
+            </li>
+
           </ul>
         </li>
 
+        <li class="nav-item has-treeview menu-close">
+          <a href="#" class="nav-link active">
+            <i class="nav-icon fas fa-calendar"></i>
+            <p>
+           Appointments
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a routerLink="/appointment/addappoinment" class="nav-link active">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Make Appointment</p>             
+              </a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/appointment/allappointment" class="nav-link active">
+                <i class="far fa-circle nav-icon"></i>
+                <p>View Appointments</p>             
+              </a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/appointment/editappointment" class="nav-link active">
+                <i class="far fa-circle nav-icon"></i>
+                <p>  Edit Appointment</p>             
+              </a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/appointment/editappointment" class="nav-link active">
+                <i class="far fa-circle nav-icon"></i>
+                <p> Cancel Appointment</p>             
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+        <li class="nav-item has-treeview menu-close">
+          <a href="#" class="nav-link active">
+            <i class="nav-icon fas fa-user"></i>
+            <p>
+        Report
+              <i class="fas fa-angle-left right"></i>
+            </p>
+          </a>
+
+     
 
 
       </ul>
