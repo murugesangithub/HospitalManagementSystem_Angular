@@ -9,6 +9,7 @@ import { FooterComponent } from './mastertheme/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,7 @@ import { LoginComponent } from './login/login.component';
     AsidenavComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
