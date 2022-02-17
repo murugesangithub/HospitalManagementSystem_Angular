@@ -27,7 +27,12 @@
                                 <div class="form-group col-md-6">
                                     <label for="exampleInputPatientId">Patient Id</label>
                                     <input type="text" class="form-control" id="exampleInputPatientId"
-                                        placeholder="Enter Patient Id">
+                                        placeholder="Enter Patient Id"  />
+                                       
+                                      <!--    <small class="form-text text-muted" 
+                                        *ngIf="exampleInputPatientId.touched && exampleInputPatientId.invalid">
+                                          Please enter email address.!
+                                      </small>-->
                                 </div>
                              
                             <div class="form-group col-md-6">
@@ -126,8 +131,7 @@
                                    <button class="btn btn-info btn-lg ">Submit</button> </div>
                                    <div class="form-group col-sm-2">
                                    <button class="btn btn-info btn-lg btn-dark">Reset</button></div>
-                                </div>
-                              
+                                </div>  
                         </div>
                     </form>
                 </div>
@@ -136,4 +140,4 @@
         </div>
         <!-- /.row -->
     </div><!-- /.container-fluid -->
-</section>
+</section>   
