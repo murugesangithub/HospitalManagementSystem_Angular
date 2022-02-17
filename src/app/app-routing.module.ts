@@ -28,7 +28,7 @@ const routes: Routes = [
 },
 {path:'doctor',
 children:[{path:'adddoctor',component:AdddoctorComponent,pathMatch:'full'},
-//{path:'alldoctors',component:AlldoctorsComponent,pathMatch:'full'},
+{path:'alldoctors',component:AlldoctorsComponent,pathMatch:'full'},
 {path:'doctordetails',component:DoctordetailsComponent,pathMatch:'full'},
 {path:'editdoctors',component:EditdoctorsComponent,pathMatch:'full'}]
 },
