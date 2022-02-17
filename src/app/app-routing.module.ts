@@ -35,7 +35,7 @@ children:[{path:'adddoctor',component:AdddoctorComponent,pathMatch:'full'},
 {path:'appointment',
 children:[{path:'addappoinment',component:AddappoinmentComponent,pathMatch:'full'},
 {path:'allappointment',component:AllappoinmentComponent,pathMatch:'full'},
-//{path:'editappointment',component:EditappointmentComponent,pathMatch:'full'},
+{path:'editappointment',component:EditappointmentComponent,pathMatch:'full'},
  {path:'cancelappointment',component:CancelappointmentComponent,pathMatch:'full'},
 ]
 },
