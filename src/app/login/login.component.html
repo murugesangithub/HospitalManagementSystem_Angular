@@ -31,7 +31,7 @@
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="text" class="form-control " placeholder="Please Enter Your Email" name="email" #email="ngModel" [(ngModel)]="service.formData.email" 
-                            required [class.invalid]="email.invalid && email.touched" pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}">
+                            required [class.invalid]="email.invalid && email.touched" p>
                             <p class="form-text text-muted" 
                             *ngIf="email.invalid && email.touched">
                               Please enter email address.!
