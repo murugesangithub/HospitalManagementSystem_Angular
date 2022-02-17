@@ -31,7 +31,7 @@
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="text" class="form-control " placeholder="Please Enter Your Email" name="email" #email="ngModel" [(ngModel)]="service.formData.email" 
-                            required [class.invalid]="email.invalid && email.touched" p>
+                            required  [class.invalid]="email.invalid && email.touched" p>
                             <p class="form-text text-muted" 
                             *ngIf="email.invalid && email.touched">
                               Please enter email address.!
@@ -40,7 +40,7 @@
                         <div class="form-group">
                             <label for="password">Password</label>
                             <input type="text" class="form-control " placeholder="Please Enter Your Password" name="password" #password="ngModel" [(ngModel)]="service.formData.password" 
-                            required maxlength="8" minlength="2" [class.invalid]="password.invalid && password.touched">
+                            required maxlength="10" minlength="2" [class.invalid]="password.invalid && password.touched">
                             <p class="form-text text-muted" 
                             *ngIf="password.invalid && password.touched">
                               Please Enter Your Password.!
