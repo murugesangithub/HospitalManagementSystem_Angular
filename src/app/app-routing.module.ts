@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent, pathMatch: 'full' },
   { path: 'patients', 
   children:[{path:'addpatients',component:AddpatientsComponent,  pathMatch: 'full'},
-//{path:'allpatients', component:AllpatientsComponent,  pathMatch: 'full'},
+{path:'allpatients', component:AllpatientsComponent,  pathMatch: 'full'},
 {path:'patientdetails',component:PatientdetailsComponent,pathMatch:'full'},
 {path:'editpatientdetails',component:EditpatientdetailsComponent,pathMatch:'full'}]
 },

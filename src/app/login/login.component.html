@@ -28,10 +28,11 @@
                     <!-- form start -->
                     <form role="form">
                         <div class="card-body">
-                            <div class="form-group">
+                            <div class="form-group" novalidate="novalidate">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                <input type="email" class="form-control is invalid" id="exampleInputEmail1"
                                     placeholder="Enter email">
+                                  
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
@@ -54,16 +55,12 @@
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
                             </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+    
                         </div>
-                        <!-- /.card-body -->
-                        <!-- <address>
-                Written by <a href="mailto:info@rijsat.com">Rijwan Ansari</a>.<br>
-                Visit us at:<br>
-                rijsat.com<br>
-                kathmandu, Baneswor<br>
-                Nepal
-              </address>-->
-
+                       
                         <map name="london">
                             <area shape="circle" coords="200,75,50" href="westminster.html" alt="Westminster">
                         </map>
